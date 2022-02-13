@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add a new DVD Library</title>
+</head>
+<body>
+<h1>Add DVD</h1>
+<form action='add_library.do' method='POST'>
+    Title: <input type='text' name='title' /> <br> <br>
+    Year: <input type='text' name='year' /> <br> <br>
+    Genre: <select name="genre">
+    <option value='UNKNOWN'>select...</option>
+    <option value="Sci-Fi">Sci-Fi</option>
+    <option value="Comedy">Comedy</option>
+    <option value="Drama">Drama</option>
+    <option value="Musical">Musical</option>
+    <option value="Romance">Romance</option>
+    <option value="Action">Action</option>
+</select>
+    or new genre:  <input type='text' name='genre' />
+    <br> <br>
+    <input type='submit' value='Add DVD' />
+</form>
+</body>
+</html>
