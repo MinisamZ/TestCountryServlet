@@ -1,4 +1,5 @@
-import soap.countryws.client.generated.*;
+import soap.countryws.client.generated.CountryInfoService;
+import soap.countryws.client.generated.TCountryInfo;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -34,8 +35,9 @@ public class FlagServlet extends HttpServlet {
         out.println("</head>");
         out.println("<body>");
 
-        out.println("<h1>" + "Flag of " + tCountryInfo.getSName() + " - " +
-                tCountryInfo.getSCountryFlag() + "</h1>");
+        out.println("<h1>" + "Flag of " + tCountryInfo.getSName() + " - </h1>");
+        out.println("" +
+                "<img src=\"" + tCountryInfo.getSCountryFlag() + "\" alt=\"flag of " + tCountryInfo.getSName() + "\">");
         out.println("</body>");
         out.println("</html>");
 
