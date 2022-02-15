@@ -1,5 +1,6 @@
 import soap.countryws.client.generated.CountryInfoService;
 import soap.countryws.client.generated.TCountryInfo;
+import soap.countryws.client.generated.TLanguage;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -7,6 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.ResultSet;
+import java.util.List;
 
 
 public class LanguagesServlet extends HttpServlet {
@@ -35,9 +37,17 @@ public class LanguagesServlet extends HttpServlet {
         out.println("</head>");
         out.println("<body>");
 
-        out.println("<h1>" + "Flag of " + tCountryInfo.getSName() + " - </h1>");
-        out.println("" +
-                "<img src=\"" + tCountryInfo.getSCountryFlag() + "\" alt=\"flag of " + tCountryInfo.getSName() + "\">");
+        out.println("<h1>" + "List of language in " + tCountryInfo.getSName() + ": </h1>");
+        List<TLanguage> tLanguages = tCountryInfo.getLanguages().getTLanguage();
+        System.out.println(tLanguages);
+        int counter = 0;
+        for (TLanguage tl : tLanguages) {
+            counter++;
+            out.println(counter + "." + tl.getSName());
+        }
+        if (counter == 0) {
+            out.println("no special languages");
+        }
         out.println("</body>");
         out.println("</html>");
 
