@@ -37,21 +37,27 @@ public class CountryServlet extends HttpServlet {
         out.println("<!DOCTYPE html>");
         out.println("<html>");
         out.println("<head>");
-        out.println("<title>Add a new DVD Library</title>");
+        out.println("<title>Country</title>");
         out.println("</head>");
         out.println("<body>");
-        out.println("<h1>Add DVD</h1>");
+        out.println("<h1>List of сountries</h1>");
         out.println("<table cellpadding=\"4\">");
         out.println("<tr>\n" +
                 "        <th>Code</th>\n" +
                 "        <th>Name</th>\n" +
+                "        <th>Flag</th>\n" +
+                "        <th>Information</th>\n" +
+                "        <th>Languages </th>\n" +
+
                 "    </tr>");
         System.out.println(tContinent.toString());
         for (TCountryCodeAndName countryCodeAndName : tCountryCodeAndNames) {
             out.print("<tr>");
             out.print(" <td>" + countryCodeAndName.getSISOCode() + "</td>");
             out.print(" <td>" + countryCodeAndName.getSName() + "</td>");
-            out.print(" <td>" + "</td>");
+            out.print(" <td>" + "flag" + "</td>");
+            out.print(" <td>" + "inf" + "</td>");
+            out.print(" <td>" + "languages" + "</td>");
             out.print("</tr>");
         }
         out.println("</table>");
