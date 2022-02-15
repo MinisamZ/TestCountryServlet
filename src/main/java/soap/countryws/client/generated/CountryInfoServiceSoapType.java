@@ -27,48 +27,48 @@ public interface CountryInfoServiceSoapType {
      * Returns a list of continents ordered by name.
      * 
      * @return
-     *     returns kz.iitu.soap.countryws.client.generated.ArrayOftContinent
+     *     returns soap.countryws.client.generated.ArrayOftContinent
      */
     @WebMethod(operationName = "ListOfContinentsByName")
     @WebResult(name = "ListOfContinentsByNameResult", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
-    @RequestWrapper(localName = "ListOfContinentsByName", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.ListOfContinentsByName")
-    @ResponseWrapper(localName = "ListOfContinentsByNameResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.ListOfContinentsByNameResponse")
+    @RequestWrapper(localName = "ListOfContinentsByName", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.ListOfContinentsByName")
+    @ResponseWrapper(localName = "ListOfContinentsByNameResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.ListOfContinentsByNameResponse")
     public ArrayOftContinent listOfContinentsByName();
 
     /**
      * Returns a list of continents ordered by code.
      * 
      * @return
-     *     returns kz.iitu.soap.countryws.client.generated.ArrayOftContinent
+     *     returns soap.countryws.client.generated.ArrayOftContinent
      */
     @WebMethod(operationName = "ListOfContinentsByCode")
     @WebResult(name = "ListOfContinentsByCodeResult", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
-    @RequestWrapper(localName = "ListOfContinentsByCode", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.ListOfContinentsByCode")
-    @ResponseWrapper(localName = "ListOfContinentsByCodeResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.ListOfContinentsByCodeResponse")
+    @RequestWrapper(localName = "ListOfContinentsByCode", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.ListOfContinentsByCode")
+    @ResponseWrapper(localName = "ListOfContinentsByCodeResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.ListOfContinentsByCodeResponse")
     public ArrayOftContinent listOfContinentsByCode();
 
     /**
      * Returns a list of currencies ordered by name.
      * 
      * @return
-     *     returns kz.iitu.soap.countryws.client.generated.ArrayOftCurrency
+     *     returns soap.countryws.client.generated.ArrayOftCurrency
      */
     @WebMethod(operationName = "ListOfCurrenciesByName")
     @WebResult(name = "ListOfCurrenciesByNameResult", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
-    @RequestWrapper(localName = "ListOfCurrenciesByName", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.ListOfCurrenciesByName")
-    @ResponseWrapper(localName = "ListOfCurrenciesByNameResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.ListOfCurrenciesByNameResponse")
+    @RequestWrapper(localName = "ListOfCurrenciesByName", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.ListOfCurrenciesByName")
+    @ResponseWrapper(localName = "ListOfCurrenciesByNameResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.ListOfCurrenciesByNameResponse")
     public ArrayOftCurrency listOfCurrenciesByName();
 
     /**
      * Returns a list of currencies ordered by code.
      * 
      * @return
-     *     returns kz.iitu.soap.countryws.client.generated.ArrayOftCurrency
+     *     returns soap.countryws.client.generated.ArrayOftCurrency
      */
     @WebMethod(operationName = "ListOfCurrenciesByCode")
     @WebResult(name = "ListOfCurrenciesByCodeResult", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
-    @RequestWrapper(localName = "ListOfCurrenciesByCode", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.ListOfCurrenciesByCode")
-    @ResponseWrapper(localName = "ListOfCurrenciesByCodeResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.ListOfCurrenciesByCodeResponse")
+    @RequestWrapper(localName = "ListOfCurrenciesByCode", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.ListOfCurrenciesByCode")
+    @ResponseWrapper(localName = "ListOfCurrenciesByCodeResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.ListOfCurrenciesByCodeResponse")
     public ArrayOftCurrency listOfCurrenciesByCode();
 
     /**
@@ -80,8 +80,8 @@ public interface CountryInfoServiceSoapType {
      */
     @WebMethod(operationName = "CurrencyName")
     @WebResult(name = "CurrencyNameResult", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
-    @RequestWrapper(localName = "CurrencyName", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.CurrencyName")
-    @ResponseWrapper(localName = "CurrencyNameResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.CurrencyNameResponse")
+    @RequestWrapper(localName = "CurrencyName", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.CurrencyName")
+    @ResponseWrapper(localName = "CurrencyNameResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.CurrencyNameResponse")
     public String currencyName(
         @WebParam(name = "sCurrencyISOCode", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
         String sCurrencyISOCode);
@@ -90,36 +90,36 @@ public interface CountryInfoServiceSoapType {
      * Returns a list of all stored counties ordered by ISO code
      * 
      * @return
-     *     returns kz.iitu.soap.countryws.client.generated.ArrayOftCountryCodeAndName
+     *     returns soap.countryws.client.generated.ArrayOftCountryCodeAndName
      */
     @WebMethod(operationName = "ListOfCountryNamesByCode")
     @WebResult(name = "ListOfCountryNamesByCodeResult", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
-    @RequestWrapper(localName = "ListOfCountryNamesByCode", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.ListOfCountryNamesByCode")
-    @ResponseWrapper(localName = "ListOfCountryNamesByCodeResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.ListOfCountryNamesByCodeResponse")
+    @RequestWrapper(localName = "ListOfCountryNamesByCode", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.ListOfCountryNamesByCode")
+    @ResponseWrapper(localName = "ListOfCountryNamesByCodeResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.ListOfCountryNamesByCodeResponse")
     public ArrayOftCountryCodeAndName listOfCountryNamesByCode();
 
     /**
      * Returns a list of all stored counties ordered by country name
      * 
      * @return
-     *     returns kz.iitu.soap.countryws.client.generated.ArrayOftCountryCodeAndName
+     *     returns soap.countryws.client.generated.ArrayOftCountryCodeAndName
      */
     @WebMethod(operationName = "ListOfCountryNamesByName")
     @WebResult(name = "ListOfCountryNamesByNameResult", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
-    @RequestWrapper(localName = "ListOfCountryNamesByName", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.ListOfCountryNamesByName")
-    @ResponseWrapper(localName = "ListOfCountryNamesByNameResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.ListOfCountryNamesByNameResponse")
+    @RequestWrapper(localName = "ListOfCountryNamesByName", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.ListOfCountryNamesByName")
+    @ResponseWrapper(localName = "ListOfCountryNamesByNameResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.ListOfCountryNamesByNameResponse")
     public ArrayOftCountryCodeAndName listOfCountryNamesByName();
 
     /**
      * Returns a list of all stored counties grouped per continent
      * 
      * @return
-     *     returns kz.iitu.soap.countryws.client.generated.ArrayOftCountryCodeAndNameGroupedByContinent
+     *     returns soap.countryws.client.generated.ArrayOftCountryCodeAndNameGroupedByContinent
      */
     @WebMethod(operationName = "ListOfCountryNamesGroupedByContinent")
     @WebResult(name = "ListOfCountryNamesGroupedByContinentResult", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
-    @RequestWrapper(localName = "ListOfCountryNamesGroupedByContinent", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.ListOfCountryNamesGroupedByContinent")
-    @ResponseWrapper(localName = "ListOfCountryNamesGroupedByContinentResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.ListOfCountryNamesGroupedByContinentResponse")
+    @RequestWrapper(localName = "ListOfCountryNamesGroupedByContinent", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.ListOfCountryNamesGroupedByContinent")
+    @ResponseWrapper(localName = "ListOfCountryNamesGroupedByContinentResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.ListOfCountryNamesGroupedByContinentResponse")
     public ArrayOftCountryCodeAndNameGroupedByContinent listOfCountryNamesGroupedByContinent();
 
     /**
@@ -131,8 +131,8 @@ public interface CountryInfoServiceSoapType {
      */
     @WebMethod(operationName = "CountryName")
     @WebResult(name = "CountryNameResult", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
-    @RequestWrapper(localName = "CountryName", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.CountryName")
-    @ResponseWrapper(localName = "CountryNameResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.CountryNameResponse")
+    @RequestWrapper(localName = "CountryName", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.CountryName")
+    @ResponseWrapper(localName = "CountryNameResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.CountryNameResponse")
     public String countryName(
         @WebParam(name = "sCountryISOCode", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
         String sCountryISOCode);
@@ -146,8 +146,8 @@ public interface CountryInfoServiceSoapType {
      */
     @WebMethod(operationName = "CountryISOCode")
     @WebResult(name = "CountryISOCodeResult", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
-    @RequestWrapper(localName = "CountryISOCode", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.CountryISOCode")
-    @ResponseWrapper(localName = "CountryISOCodeResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.CountryISOCodeResponse")
+    @RequestWrapper(localName = "CountryISOCode", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.CountryISOCode")
+    @ResponseWrapper(localName = "CountryISOCodeResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.CountryISOCodeResponse")
     public String countryISOCode(
         @WebParam(name = "sCountryName", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
         String sCountryName);
@@ -161,8 +161,8 @@ public interface CountryInfoServiceSoapType {
      */
     @WebMethod(operationName = "CapitalCity")
     @WebResult(name = "CapitalCityResult", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
-    @RequestWrapper(localName = "CapitalCity", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.CapitalCity")
-    @ResponseWrapper(localName = "CapitalCityResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.CapitalCityResponse")
+    @RequestWrapper(localName = "CapitalCity", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.CapitalCity")
+    @ResponseWrapper(localName = "CapitalCityResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.CapitalCityResponse")
     public String capitalCity(
         @WebParam(name = "sCountryISOCode", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
         String sCountryISOCode);
@@ -172,12 +172,12 @@ public interface CountryInfoServiceSoapType {
      * 
      * @param sCountryISOCode
      * @return
-     *     returns kz.iitu.soap.countryws.client.generated.TCurrency
+     *     returns soap.countryws.client.generated.TCurrency
      */
     @WebMethod(operationName = "CountryCurrency")
     @WebResult(name = "CountryCurrencyResult", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
-    @RequestWrapper(localName = "CountryCurrency", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.CountryCurrency")
-    @ResponseWrapper(localName = "CountryCurrencyResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.CountryCurrencyResponse")
+    @RequestWrapper(localName = "CountryCurrency", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.CountryCurrency")
+    @ResponseWrapper(localName = "CountryCurrencyResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.CountryCurrencyResponse")
     public TCurrency countryCurrency(
         @WebParam(name = "sCountryISOCode", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
         String sCountryISOCode);
@@ -191,8 +191,8 @@ public interface CountryInfoServiceSoapType {
      */
     @WebMethod(operationName = "CountryFlag")
     @WebResult(name = "CountryFlagResult", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
-    @RequestWrapper(localName = "CountryFlag", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.CountryFlag")
-    @ResponseWrapper(localName = "CountryFlagResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.CountryFlagResponse")
+    @RequestWrapper(localName = "CountryFlag", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.CountryFlag")
+    @ResponseWrapper(localName = "CountryFlagResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.CountryFlagResponse")
     public String countryFlag(
         @WebParam(name = "sCountryISOCode", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
         String sCountryISOCode);
@@ -206,8 +206,8 @@ public interface CountryInfoServiceSoapType {
      */
     @WebMethod(operationName = "CountryIntPhoneCode")
     @WebResult(name = "CountryIntPhoneCodeResult", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
-    @RequestWrapper(localName = "CountryIntPhoneCode", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.CountryIntPhoneCode")
-    @ResponseWrapper(localName = "CountryIntPhoneCodeResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.CountryIntPhoneCodeResponse")
+    @RequestWrapper(localName = "CountryIntPhoneCode", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.CountryIntPhoneCode")
+    @ResponseWrapper(localName = "CountryIntPhoneCodeResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.CountryIntPhoneCodeResponse")
     public String countryIntPhoneCode(
         @WebParam(name = "sCountryISOCode", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
         String sCountryISOCode);
@@ -217,12 +217,12 @@ public interface CountryInfoServiceSoapType {
      * 
      * @param sCountryISOCode
      * @return
-     *     returns kz.iitu.soap.countryws.client.generated.TCountryInfo
+     *     returns soap.countryws.client.generated.TCountryInfo
      */
     @WebMethod(operationName = "FullCountryInfo")
     @WebResult(name = "FullCountryInfoResult", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
-    @RequestWrapper(localName = "FullCountryInfo", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.FullCountryInfo")
-    @ResponseWrapper(localName = "FullCountryInfoResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.FullCountryInfoResponse")
+    @RequestWrapper(localName = "FullCountryInfo", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.FullCountryInfo")
+    @ResponseWrapper(localName = "FullCountryInfoResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.FullCountryInfoResponse")
     public TCountryInfo fullCountryInfo(
         @WebParam(name = "sCountryISOCode", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
         String sCountryISOCode);
@@ -231,12 +231,12 @@ public interface CountryInfoServiceSoapType {
      * Returns an array with all countries and all the language information stored
      * 
      * @return
-     *     returns kz.iitu.soap.countryws.client.generated.ArrayOftCountryInfo
+     *     returns soap.countryws.client.generated.ArrayOftCountryInfo
      */
     @WebMethod(operationName = "FullCountryInfoAllCountries")
     @WebResult(name = "FullCountryInfoAllCountriesResult", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
-    @RequestWrapper(localName = "FullCountryInfoAllCountries", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.FullCountryInfoAllCountries")
-    @ResponseWrapper(localName = "FullCountryInfoAllCountriesResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.FullCountryInfoAllCountriesResponse")
+    @RequestWrapper(localName = "FullCountryInfoAllCountries", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.FullCountryInfoAllCountries")
+    @ResponseWrapper(localName = "FullCountryInfoAllCountriesResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.FullCountryInfoAllCountriesResponse")
     public ArrayOftCountryInfo fullCountryInfoAllCountries();
 
     /**
@@ -244,12 +244,12 @@ public interface CountryInfoServiceSoapType {
      * 
      * @param sISOCurrencyCode
      * @return
-     *     returns kz.iitu.soap.countryws.client.generated.ArrayOftCountryCodeAndName
+     *     returns soap.countryws.client.generated.ArrayOftCountryCodeAndName
      */
     @WebMethod(operationName = "CountriesUsingCurrency")
     @WebResult(name = "CountriesUsingCurrencyResult", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
-    @RequestWrapper(localName = "CountriesUsingCurrency", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.CountriesUsingCurrency")
-    @ResponseWrapper(localName = "CountriesUsingCurrencyResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.CountriesUsingCurrencyResponse")
+    @RequestWrapper(localName = "CountriesUsingCurrency", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.CountriesUsingCurrency")
+    @ResponseWrapper(localName = "CountriesUsingCurrencyResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.CountriesUsingCurrencyResponse")
     public ArrayOftCountryCodeAndName countriesUsingCurrency(
         @WebParam(name = "sISOCurrencyCode", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
         String sISOCurrencyCode);
@@ -258,24 +258,24 @@ public interface CountryInfoServiceSoapType {
      * Returns an array of languages ordered by name
      * 
      * @return
-     *     returns kz.iitu.soap.countryws.client.generated.ArrayOftLanguage
+     *     returns soap.countryws.client.generated.ArrayOftLanguage
      */
     @WebMethod(operationName = "ListOfLanguagesByName")
     @WebResult(name = "ListOfLanguagesByNameResult", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
-    @RequestWrapper(localName = "ListOfLanguagesByName", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.ListOfLanguagesByName")
-    @ResponseWrapper(localName = "ListOfLanguagesByNameResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.ListOfLanguagesByNameResponse")
+    @RequestWrapper(localName = "ListOfLanguagesByName", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.ListOfLanguagesByName")
+    @ResponseWrapper(localName = "ListOfLanguagesByNameResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.ListOfLanguagesByNameResponse")
     public ArrayOftLanguage listOfLanguagesByName();
 
     /**
      * Returns an array of languages ordered by code
      * 
      * @return
-     *     returns kz.iitu.soap.countryws.client.generated.ArrayOftLanguage
+     *     returns soap.countryws.client.generated.ArrayOftLanguage
      */
     @WebMethod(operationName = "ListOfLanguagesByCode")
     @WebResult(name = "ListOfLanguagesByCodeResult", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
-    @RequestWrapper(localName = "ListOfLanguagesByCode", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.ListOfLanguagesByCode")
-    @ResponseWrapper(localName = "ListOfLanguagesByCodeResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.ListOfLanguagesByCodeResponse")
+    @RequestWrapper(localName = "ListOfLanguagesByCode", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.ListOfLanguagesByCode")
+    @ResponseWrapper(localName = "ListOfLanguagesByCodeResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.ListOfLanguagesByCodeResponse")
     public ArrayOftLanguage listOfLanguagesByCode();
 
     /**
@@ -287,8 +287,8 @@ public interface CountryInfoServiceSoapType {
      */
     @WebMethod(operationName = "LanguageName")
     @WebResult(name = "LanguageNameResult", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
-    @RequestWrapper(localName = "LanguageName", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.LanguageName")
-    @ResponseWrapper(localName = "LanguageNameResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.LanguageNameResponse")
+    @RequestWrapper(localName = "LanguageName", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.LanguageName")
+    @ResponseWrapper(localName = "LanguageNameResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.LanguageNameResponse")
     public String languageName(
         @WebParam(name = "sISOCode", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
         String sISOCode);
@@ -302,8 +302,8 @@ public interface CountryInfoServiceSoapType {
      */
     @WebMethod(operationName = "LanguageISOCode")
     @WebResult(name = "LanguageISOCodeResult", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
-    @RequestWrapper(localName = "LanguageISOCode", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.LanguageISOCode")
-    @ResponseWrapper(localName = "LanguageISOCodeResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "kz.iitu.soap.countryws.client.generated.LanguageISOCodeResponse")
+    @RequestWrapper(localName = "LanguageISOCode", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.LanguageISOCode")
+    @ResponseWrapper(localName = "LanguageISOCodeResponse", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo", className = "soap.countryws.client.generated.LanguageISOCodeResponse")
     public String languageISOCode(
         @WebParam(name = "sLanguageName", targetNamespace = "http://www.oorsprong.org/websamples.countryinfo")
         String sLanguageName);

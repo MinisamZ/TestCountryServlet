@@ -1,6 +1,4 @@
-
 import soap.countryws.client.generated.*;
-
 import java.util.List;
 
 public class Main {
