@@ -13,10 +13,31 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>CountryServlet</servlet-name>
-        <url-pattern>/</url-pattern>
+        <url-pattern>/list</url-pattern>
     </servlet-mapping>
-    <error-page>
-        <error-code>404</error-code>
-        <location>/404.html</location>
-    </error-page>
+    <servlet>
+        <servlet-name>FlagServlet</servlet-name>
+        <servlet-class>FlagServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FlagServlet</servlet-name>
+        <url-pattern>/flag</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>InfServlet</servlet-name>
+        <servlet-class>InfServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InfServlet</servlet-name>
+        <url-pattern>/inf</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>LanguagesServlet</servlet-name>
+        <servlet-class>LanguagesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LanguagesServlet</servlet-name>
+        <url-pattern>/languages</url-pattern>
+    </servlet-mapping>
+
 </web-app>

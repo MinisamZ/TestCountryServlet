@@ -18,6 +18,7 @@ public class Main {
         CountryFlagResponse countryFlagResponse = new CountryFlagResponse();
         countryFlagResponse.setCountryFlagResult(countryFlag.getSCountryISOCode());
         System.out.println(countryFlagResponse.getCountryFlagResult());
+        System.out.println(tCountryCodeAndNames.get(1).getSISOCode());
 
 
 //        ArrayOftContinent arrayOftContinent = countryISS.listOfContinentsByName();

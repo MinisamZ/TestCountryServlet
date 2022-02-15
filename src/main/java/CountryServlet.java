@@ -43,6 +43,7 @@ public class CountryServlet extends HttpServlet {
         out.println("<h1>List of сountries</h1>");
         out.println("<table cellpadding=\"4\">");
         out.println("<tr>\n" +
+                "        <th>id</th>\n" +
                 "        <th>Code</th>\n" +
                 "        <th>Name</th>\n" +
                 "        <th>Flag</th>\n" +
@@ -52,10 +53,13 @@ public class CountryServlet extends HttpServlet {
                 "    </tr>");
         System.out.println(tContinent.toString());
         for (TCountryCodeAndName countryCodeAndName : tCountryCodeAndNames) {
+            int lastIndex = tCountryCodeAndNames.lastIndexOf(countryCodeAndName);
+
             out.print("<tr>");
+            out.print(" <td>" + lastIndex + "</td>");
             out.print(" <td>" + countryCodeAndName.getSISOCode() + "</td>");
             out.print(" <td>" + countryCodeAndName.getSName() + "</td>");
-            out.print(" <td>" + "flag" + "</td>");
+            out.print(" <td><a href=\"/countryCode?id=" + countryCodeAndName.getSISOCode() + "\"> " + "flag" + "</a></td>");
             out.print(" <td>" + "inf" + "</td>");
             out.print(" <td>" + "languages" + "</td>");
             out.print("</tr>");
