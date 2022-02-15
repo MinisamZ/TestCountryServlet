@@ -32,14 +32,29 @@ public class Main {
         System.out.println(tCountryInfo.getSContinentCode());
         System.out.println(tCountryInfo.getSCurrencyISOCode());
         System.out.println(tCountryInfo.getSCountryFlag());
+
+        TCurrency tCurrency = new TCurrency();
+        System.out.println(tCurrency.getSISOCode());
+        tCurrency.setSISOCode(tCountryInfo.getSISOCode());
+        System.out.println("jjjj " + tCurrency.getSName());
+
+
+        System.out.println(tCountryInfo.getLanguages());
+        ArrayOftLanguage arrayOftLanguage = new ArrayOftLanguage();
+        arrayOftLanguage = tCountryInfo.getLanguages();
+        List<TLanguage> tLanguages = tCountryInfo.getLanguages().getTLanguage();
+        System.out.println(tLanguages);
+
+
 //        System.out.println(countryInfoService.getCountryInfoServiceSoap().fullCountryInfo("DZ").getLanguages());
 
 
 //        ArrayOftContinent arrayOftContinent = countryISS.listOfContinentsByName();
 //        List<TContinent> tContinent = arrayOftContinent.getTContinent();
-//        for (TContinent continent : tContinent) {
-//            System.out.println("continent - " + continent.getSName());
-//        }
+        for (TLanguage tl : tLanguages) {
+            System.out.println("tLanguages - " + tl.getSName());
+            System.out.println("tLanguages - " + tl.getSISOCode());
+        }
     }
 }
 

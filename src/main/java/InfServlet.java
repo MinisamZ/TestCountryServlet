@@ -1,7 +1,5 @@
-import soap.countryws.client.generated.CountryFlag;
-import soap.countryws.client.generated.CountryFlagResponse;
 import soap.countryws.client.generated.CountryInfoService;
-import soap.countryws.client.generated.CountryInfoServiceSoapType;
+import soap.countryws.client.generated.TCountryInfo;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -24,12 +22,8 @@ public class InfServlet extends HttpServlet {
                              HttpServletResponse response)
             throws IOException {
         CountryInfoService countryIS = new CountryInfoService();
-        CountryInfoServiceSoapType countryISS = countryIS.getCountryInfoServiceSoap();
-        CountryFlag countryFlag = new CountryFlag();
-        countryFlag.setSCountryISOCode(request.getParameter("countryCode"));
-        CountryFlagResponse countryFlagResponse = new CountryFlagResponse();
-        countryFlagResponse.setCountryFlagResult(countryFlag.getSCountryISOCode());
-        System.out.println(countryFlagResponse.getCountryFlagResult());
+        TCountryInfo tCountryInfo =
+                countryIS.getCountryInfoServiceSoap().fullCountryInfo(request.getParameter("countryCode"));
 
         response.setContentType("text/html; charset=UTF-8");
         ResultSet resultSet = null;
@@ -41,8 +35,25 @@ public class InfServlet extends HttpServlet {
         out.println("</head>");
         out.println("<body>");
 
-        out.println("<h1>" + "Flag of " + request.getParameter("countryName") + " - " +
-                countryFlagResponse.getCountryFlagResult() + "</h1>");
+        out.println("<h1>" + "Info of " + tCountryInfo.getSName() + ": </h1>");
+        out.println("<table cellpadding=\"4\">");
+
+        out.print("<tr><td>" + "The name of the country: " + "</td>");
+        out.print("<td>" + tCountryInfo.getSName() + "</td></tr>");
+        out.print("<tr><td>" + "Capital name: " + "</td>");
+        out.print("<td>" + tCountryInfo.getSCapitalCity() + "</td></tr>");
+        out.print("<tr><td>" + "Telephone code: " + "</td>");
+        out.print("<td>" + tCountryInfo.getSPhoneCode() + "</td></tr>");
+        out.print("<tr><td>" + "Continent code: " + "</td>");
+        out.print("<td>" + tCountryInfo.getSContinentCode() + "</td></tr>");
+        out.print("<tr><td>" + "Currency code: " + "</td>");
+        out.print("<td>" + tCountryInfo.getSCurrencyISOCode() + "</td></tr>");
+        out.print("<tr><td>" + "Flag: " + "</td>");
+        out.print("<td>" + "<img src=\"" + tCountryInfo.getSCountryFlag() + "\" " +
+                "alt=\"flag of " + tCountryInfo.getSName() + "\">" + "</td></tr>");
+
+
+        out.println("</table>");
         out.println("</body>");
         out.println("</html>");
 
