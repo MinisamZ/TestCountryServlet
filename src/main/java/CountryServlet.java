@@ -59,8 +59,7 @@ public class CountryServlet extends HttpServlet {
             out.print(" <td>" + lastIndex + "</td>");
             out.print(" <td>" + countryCodeAndName.getSISOCode() + "</td>");
             out.print(" <td>" + countryCodeAndName.getSName() + "</td>");
-            out.print(" <td><a href=\"/flag?countryCode=" + countryCodeAndName.getSISOCode() + "&" +
-                    "countryName=" + countryCodeAndName.getSName() + "\"> " + "flag" + "</a></td>");
+            out.print(" <td><a href=\"/flag?countryCode=" + countryCodeAndName.getSISOCode() + "flag" + "</a></td>");
             out.print(" <td><a href=\"/inf?countryCode=" + countryCodeAndName.getSISOCode() + "&" +
                     "countryName=" + countryCodeAndName.getSName() + "\"> " + "inf" + "</a></td>");
             out.print(" <td><a href=\"/languages?countryCode=" + countryCodeAndName.getSISOCode() + "&" +

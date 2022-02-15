@@ -19,6 +19,20 @@ public class Main {
         countryFlagResponse.setCountryFlagResult(countryFlag.getSCountryISOCode());
         System.out.println(countryFlagResponse.getCountryFlagResult());
         System.out.println(tCountryCodeAndNames.get(1).getSISOCode());
+        CountryInfoService countryInfoService = new CountryInfoService();
+        TCountryInfo tCountryInfo = countryInfoService.getCountryInfoServiceSoap().fullCountryInfo("DZ");
+
+        System.out.println(tCountryInfo.getLanguages().getTLanguage().toString());
+//        ArrayOftLanguage<TLanguage> tLanguage = tCountryInfo.getLanguages().getTLanguage();
+
+        System.out.println(tCountryInfo.getSISOCode());
+        System.out.println(tCountryInfo.getSName());
+        System.out.println(tCountryInfo.getSCapitalCity());
+        System.out.println(tCountryInfo.getSPhoneCode());
+        System.out.println(tCountryInfo.getSContinentCode());
+        System.out.println(tCountryInfo.getSCurrencyISOCode());
+        System.out.println(tCountryInfo.getSCountryFlag());
+//        System.out.println(countryInfoService.getCountryInfoServiceSoap().fullCountryInfo("DZ").getLanguages());
 
 
 //        ArrayOftContinent arrayOftContinent = countryISS.listOfContinentsByName();

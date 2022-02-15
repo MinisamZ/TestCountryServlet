@@ -1,7 +1,4 @@
-import soap.countryws.client.generated.CountryFlag;
-import soap.countryws.client.generated.CountryFlagResponse;
-import soap.countryws.client.generated.CountryInfoService;
-import soap.countryws.client.generated.CountryInfoServiceSoapType;
+import soap.countryws.client.generated.*;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -24,12 +21,8 @@ public class FlagServlet extends HttpServlet {
                              HttpServletResponse response)
             throws IOException {
         CountryInfoService countryIS = new CountryInfoService();
-        CountryInfoServiceSoapType countryISS = countryIS.getCountryInfoServiceSoap();
-        CountryFlag countryFlag = new CountryFlag();
-        countryFlag.setSCountryISOCode(request.getParameter("countryCode"));
-        CountryFlagResponse countryFlagResponse = new CountryFlagResponse();
-        countryFlagResponse.setCountryFlagResult(countryFlag.getSCountryISOCode());
-        System.out.println(countryFlagResponse.getCountryFlagResult());
+        TCountryInfo tCountryInfo =
+                countryIS.getCountryInfoServiceSoap().fullCountryInfo(request.getParameter("countryCode"));
 
         response.setContentType("text/html; charset=UTF-8");
         ResultSet resultSet = null;
@@ -41,8 +34,8 @@ public class FlagServlet extends HttpServlet {
         out.println("</head>");
         out.println("<body>");
 
-        out.println("<h1>" + "Flag of " + request.getParameter("countryName") + " - " +
-                countryFlagResponse.getCountryFlagResult() + "</h1>");
+        out.println("<h1>" + "Flag of " + tCountryInfo.getSName() + " - " +
+                tCountryInfo.getSCountryFlag() + "</h1>");
         out.println("</body>");
         out.println("</html>");
 
